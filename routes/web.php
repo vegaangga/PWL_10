@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\MahasiswaController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -29,3 +30,6 @@ Route::get('/search',[MahasiswaController::class, 'cari']);
 
 //praktikum 9 latihan
 Route::get('nilai/{nim}',[MahasiswaController::class,'nilai']);
+
+//Minggu 10 Praktikum 1
+Route::resource('articles', ArticleController::class);
