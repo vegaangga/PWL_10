@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\MahasiswaController;
+use App\Models\Article;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -33,3 +34,5 @@ Route::get('nilai/{nim}',[MahasiswaController::class,'nilai']);
 
 //Minggu 10 Praktikum 1
 Route::resource('articles', ArticleController::class);
+
+Route::get('/article/cetak_pdf',[ArticleController::class,'cetak_pdf']);
