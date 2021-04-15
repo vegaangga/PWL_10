@@ -7,6 +7,9 @@
          <div class="card-header">Detail Mahasiswa</div>
       <div class="card-body">
          <ul class="list-group list-group-flush">
+            <div style="text-align: center">
+               <img width="150p" src="{{asset('storage/'.$mahasiswa->foto_profile)}}">
+            </div>
          <li class="list-group-item"><b>Nim: </b>{{$mahasiswa->nim}}</li>
          <li class="list-group-item"><b>Nama: </b>{{$mahasiswa->nama}}</li>
          <li class="list-group-item"><b>Kelas: </b>{{$mahasiswa->kelas->nama_kelas}}</li>
