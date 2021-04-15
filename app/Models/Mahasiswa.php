@@ -24,7 +24,8 @@ class Mahasiswa extends Model
         'no_handphone',
         // menambahkan kolom
         'email',
-        'tgl_lahir'
+        'tgl_lahir',
+        'foto_profile'
     ];
 
     public function kelas(){
