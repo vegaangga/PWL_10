@@ -2,6 +2,7 @@
 @section('content')
     <div class="row">
         <div class="col-12 text-center">
+            <h2>JURUSAN TEKNOLOGI INFORMASI-POLITEKNIK NEGERI MALANG</h2>
             <h3><strong>KARTU HASIL STUDI (KHS)</strong></h3>
         </div>
         <div class="col-12 my-4">
@@ -28,6 +29,7 @@
                 @endforeach
             </table>
             <a href="{{ route('mahasiswa.index') }}" class="btn btn-success">Kembali</a>
+            <a class="btn btn-danger" href="{{ route('mahasiswa.cetak_pdf', $mhs->nim) }}">CETAK PDF</a>
         </div>
     </div>
 @endsection
